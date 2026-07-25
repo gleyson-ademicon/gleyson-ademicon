@@ -1,409 +1,426 @@
-@media(max-width:1000px){
+/* ==========================================
+TABLETS
+========================================== */
 
-.hero-content{
+@media (max-width: 1024px){
 
-grid-template-columns:1fr;
-
-}
-
-.hero-image{
-
-order:-1;
-
-justify-content:center;
-
+.container{
+    width:92%;
 }
 
 nav ul{
-
-display:none;
-
+    display:none;
 }
 
 .btn-header{
-
-display:none;
-
+    display:none;
 }
 
 .menu-mobile{
-
-display:block;
-
-font-size:35px;
-
-cursor:pointer;
-
+    display:block;
 }
-
-.hero-text h1{
-
-font-size:48px;
-
-}
-
-}
-
-@media(max-width:600px){
 
 .hero{
+    position:relative;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding:120px 0 60px;
+}
 
-padding-top:120px;
+.hero-content{
+    position:relative;
+    z-index:5;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    max-width:100%;
+    padding-top:0;
+}
 
+.hero-text{
+    text-align:center;
+    margin:0;
+    max-width:420px;
 }
 
 .hero-text h1{
+    font-size:36px;
+    line-height:1.15;
+}
 
-font-size:36px;
-
+.hero-text p{
+    font-size:16px;
+    margin:25px auto;
 }
 
 .hero-icons{
-
-flex-direction:column;
-
-gap:20px;
-
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:18px;
 }
 
-.btn-main{
-
-width:100%;
-
-justify-content:center;
-
+.hero-image{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    z-index:1;
 }
 
-}
-/*=========================
-SOLUTIONS
-==========================*/
-
-@media(max-width:1200px){
-
-.solutions-grid{
-
-grid-template-columns:repeat(3,1fr);
-
-}
-
+.hero-image::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        to bottom,
+        rgba(0,0,0,.75),
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.85)
+    );
 }
 
-@media(max-width:768px){
-
-.solutions{
-
-padding:70px 0;
-
-}
-
-.section-title h2{
-
-font-size:34px;
-
+.hero-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
 }
 
 .solutions-grid{
-
-grid-template-columns:1fr;
-
+    grid-template-columns:repeat(2,1fr);
 }
-
-.solution-card{
-
-padding:35px;
-
-}
-
-}
-@media(max-width:900px){
 
 .goal-grid{
-
-grid-template-columns:repeat(2,1fr);
-
+    grid-template-columns:repeat(2,1fr);
 }
-
-.simulator-box{
-
-padding:30px;
-
-}
-
-}
-
-@media(max-width:600px){
-
-.goal-grid{
-
-grid-template-columns:1fr;
-
-}
-
-.progress-steps{
-
-gap:10px;
-
-}
-
-.step p{
-
-font-size:12px;
-
-}
-
-.step-content h3{
-
-font-size:26px;
-
-}
-
-.next-step{
-
-width:100%;
-
-}
-
-}
-@media(max-width:700px){
 
 .value-grid{
-
-grid-template-columns:1fr;
-
+    grid-template-columns:repeat(2,1fr);
 }
 
-.simulator-buttons{
-
-flex-direction:column;
-
-gap:15px;
-
+.advantages-grid{
+    grid-template-columns:repeat(2,1fr);
 }
 
-.prev-step,
-.next-step,
-.finish-step{
-
-width:100%;
-
+.timeline-grid{
+    grid-template-columns:repeat(2,1fr);
 }
 
-.lead-form{
-
-margin-top:25px;
-
+.stats{
+    grid-template-columns:repeat(2,1fr);
 }
 
+.footer-grid{
+    grid-template-columns:repeat(2,1fr);
 }
-
-@media(max-width:1000px){
-
-    .advantages-grid{
-
-        grid-template-columns:repeat(2,1fr);
-
-    }
-
-    .stats{
-
-        grid-template-columns:repeat(2,1fr);
-
-    }
-
-}
-
-@media(max-width:700px){
-
-    .advantages-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .stats{
-
-        grid-template-columns:1fr;
-
-        gap:40px;
-
-    }
-
-}
-
-@media(max-width:768px){
-
-.slider{
-
-flex-direction:column;
-
-}
-
-.slider-btn{
-
-width:50px;
-
-height:50px;
-
-}
-
-.slide{
-
-padding:35px;
-
-}
-
-.slide h3{
-
-font-size:22px;
-
-}
-
-.slide p{
-
-font-size:16px;
-
-}
-
-}
-
-@media(max-width:768px){
-
-.faq{
-
-padding:80px 0;
-
-}
-
-.faq-question{
-
-padding:22px;
-
-}
-
-.faq-question h3{
-
-font-size:18px;
-
-}
-
-.faq-answer p{
-
-font-size:15px;
-
-}
-
-}
-
-@media(max-width:992px){
 
 .cta-box{
-
-grid-template-columns:1fr;
-
-text-align:center;
-
-padding:50px 35px;
-
+    grid-template-columns:1fr;
+    text-align:center;
 }
 
 .cta-content p{
-
-margin:auto auto 40px;
-
+    margin:auto auto 35px;
 }
 
 .cta-buttons{
-
-justify-content:center;
-
+    justify-content:center;
 }
 
 .cta-image{
-
-order:-1;
-
+    order:-1;
 }
 
 }
 
-@media(max-width:600px){
+
+/* ==========================================
+CELULARES
+========================================== */
+
+@media (max-width:768px){
+
+section{
+    overflow:hidden;
+}
+
+.container{
+    width:94%;
+}
+
+.hero{
+    padding:120px 0 60px;
+}
+
+.hero-content{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.hero-text{
+    text-align:center;
+    margin:0;
+}
+
+.hero-text h1{
+    font-size:36px;
+    line-height:1.2;
+}
+
+.hero-text p{
+    font-size:16px;
+    margin:25px auto;
+}
+
+.hero-icons{
+    flex-direction:column;
+    gap:18px;
+    align-items:center;
+}
+
+.hero-image{
+    height:340px;
+    margin-top:30px;
+}
+
+.hero-image img{
+    object-fit:contain;
+}
+
+.btn-main,
+.btn-outline{
+    width:100%;
+    justify-content:center;
+}
+
+.section-title{
+    margin-bottom:40px;
+}
+
+.section-title h2{
+    font-size:30px;
+}
+
+.section-title p{
+    font-size:16px;
+}
+
+.solutions-grid,
+.goal-grid,
+.value-grid,
+.advantages-grid,
+.timeline-grid,
+.footer-grid{
+    grid-template-columns:1fr;
+}
+
+.solution-card,
+.goal-card,
+.value-card,
+.advantage-card,
+.timeline-card{
+    padding:30px;
+}
+
+.simulator{
+    padding:80px 0;
+}
+
+.simulator-box{
+    padding:25px;
+}
+
+.progress{
+    margin-bottom:40px;
+}
+
+.progress-steps{
+    display:flex;
+    justify-content:space-between;
+    gap:0;
+}
+
+.step{
+    flex:1;
+}
+
+.step span{
+    width:34px;
+    height:34px;
+    font-size:14px;
+}
+
+.step small{
+    font-size:11px;
+    text-align:center;
+}
+
+.step-content h3{
+    font-size:28px;
+}
+
+.form-grid{
+    grid-template-columns:1fr;
+}
+
+.form-grid textarea{
+    grid-column:auto;
+}
+
+.simulator-buttons{
+    flex-direction:column;
+    gap:15px;
+}
+
+.simulator-buttons button{
+    width:100%;
+}
+
+.stats{
+    grid-template-columns:1fr;
+    gap:35px;
+}
+
+.cta-box{
+    padding:35px 25px;
+}
 
 .cta-content h2{
-
-font-size:34px;
-
+    font-size:32px;
 }
 
-.badge{
-
-font-size:14px;
-
+.cta-content p{
+    font-size:16px;
 }
 
-.btn-outline,
-.btn-main{
-
-width:100%;
-
+.cta-buttons{
+    flex-direction:column;
 }
 
+.cta-image img{
+    max-width:260px;
 }
 
-@media(max-width:1000px){
-
-.footer-grid{
-
-grid-template-columns:1fr 1fr;
-
+.faq-question{
+    padding:20px;
 }
 
+.faq-question h3{
+    font-size:17px;
 }
 
-@media(max-width:650px){
-
-.footer-grid{
-
-grid-template-columns:1fr;
-
-text-align:center;
-
+.footer{
+    text-align:center;
 }
 
 .footer-column ul li{
-
-justify-content:center;
-
+    justify-content:center;
 }
 
 .social{
-
-justify-content:center;
-
+    justify-content:center;
 }
 
 .footer-logo{
-
-margin:auto auto 20px;
-
+    margin:auto auto 20px;
 }
 
 .whatsapp-float{
-
-width:58px;
-
-height:58px;
-
-font-size:30px;
-
+    width:58px;
+    height:58px;
+    font-size:30px;
 }
 
 .back-top{
+    right:20px;
+    bottom:95px;
+}
 
-right:20px;
+}
 
-bottom:95px;
 
+/* ==========================================
+CELULARES PEQUENOS
+========================================== */
+
+@media (max-width:480px){
+
+.progress{
+    margin-bottom:40px;
+}
+
+.progress-steps{
+    display:flex;
+    justify-content:space-between;
+    gap:0;
+}
+
+.step{
+    flex:1;
+}
+
+.step span{
+    width:34px;
+    height:34px;
+    font-size:14px;
+}
+
+.step small{
+    font-size:11px;
+    text-align:center;
+}   
+
+.hero-text h1{
+    font-size:30px;
+}
+
+.hero-image{
+    position:absolute;
+    inset:0;
+    height:100%;
+}
+
+.hero-icons i{
+    font-size:24px;
+}
+
+.hero-icons p{
+    font-size:14px;
+}
+
+.section-title h2{
+    font-size:26px;
+}
+
+.step span{
+    width:38px;
+    height:38px;
+}
+
+.step small{
+    font-size:11px;
+}
+
+.simulator-box{
+    padding:18px;
+}
+
+.goal-card h4{
+    font-size:18px;
+}
+
+.value-card{
+    font-size:16px;
+}
+
+.cta-content h2{
+    font-size:28px;
+}
+
+.footer-column h3{
+    font-size:20px;
 }
 
 }
